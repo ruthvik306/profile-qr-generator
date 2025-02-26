@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; }
+        .container { max-width: 600px; margin: auto; text-align: left; }
+        h1 { text-align: center; }
+        p { line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <img id="photo" src="" alt="Profile Photo">
+    <div class="container">
+        <h3>Bio</h3>
+        <p id="bio"></p>
+        <h3>Write-up</h3>
+        <p id="writeup"></p>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("name");
+
+        fetch("../profiles.json")
+        .then(response => response.json())
+        .then(data => {
+            const profile = data.find(p => p.name === name);
+            if (profile) {
+                document.getElementById("name").textContent = profile.name;
+                document.getElementById("photo").src = `../${profile.photo}`;
+                document.getElementById("bio").textContent = profile.bio;
+                document.getElementById("writeup").textContent = profile.writeup;
+            } else {
+                document.body.innerHTML = "<h1>Profile Not Found</h1>";
+            }
+        });
+    </script>
+</body>
+</html>
