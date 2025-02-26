@@ -8,7 +8,7 @@
   },
   {
     "name": "Jane Smith",
-    "photo": "jane.jpg",
+    "photo": "john.jpg",
     "bio": "Creative Director and Illustrator.",
     "writeup": "Jane specializes in branding and visual storytelling. She has worked with top brands and enjoys mentoring young artists in the industry.",
     "url": "profiles/template.html?name=Jane%20Smith"
