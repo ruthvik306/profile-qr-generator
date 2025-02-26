@@ -1,7 +1,7 @@
 [
   {
     "name": "John Doe",
-    "photo": "john.jpg",
+    "photo": "john.png",
     "bio": "Software Engineer passionate about AI and robotics.",
     "writeup": "John has worked on multiple AI-driven applications and is an advocate for open-source projects. He enjoys sharing knowledge through blog posts and speaking engagements.",
     "url": "profiles/template.html?name=John%20Doe"
