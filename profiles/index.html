@@ -1,79 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .profile-container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 400px;
-            width: 90%;
-        }
-        .profile-container img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        h1 {
-            font-size: 24px;
-            color: #333;
-        }
-        h3 {
-            font-size: 18px;
-            color: #555;
-            margin-top: 10px;
-        }
-        p {
-            font-size: 14px;
-            color: #777;
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #fde2e4 0%, #fff1f3 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    .womens-day-banner {
+      width: 100%;
+      padding: 20px 0;
+      background: #f78fb3;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .womens-day-banner h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .womens-day-banner p {
+      font-size: 1rem;
+    }
+
+    .profile-container {
+      background: #fff;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    .profile-container img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #ddd;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 18px;
+      color: #555;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      margin: 30px 0;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <div class="profile-container">
-        <img id="photo" src="" alt="Profile Photo">
-        <h1 id="name"></h1>
-        <h3>Bio</h3>
-        <p id="bio"></p>
-        <h3>Write-up</h3>
-        <p id="writeup"></p>
-    </div>
+  <div class="womens-day-banner">
+    <h1>Happy International Women's Day!</h1>
+    <p>Celebrating the achievements and contributions of women everywhere</p>
+  </div>
 
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const name = params.get("name");
+  <div class="profile-container">
+    <img id="photo" src="" alt="Profile Photo" />
+    <h2 id="name"></h2>
 
-        fetch("../profiles.json")
-        .then(response => response.json())
-        .then(data => {
-            const profile = data.find(p => p.name === name);
-            if (profile) {
-                document.getElementById("name").textContent = profile.name;
-                document.getElementById("photo").src = `../${profile.photo}`;
-                document.getElementById("bio").textContent = profile.bio;
-                document.getElementById("writeup").textContent = profile.writeup;
-            } else {
-                document.body.innerHTML = "<h1>Profile Not Found</h1>";
-            }
-        });
-    </script>
+    <h3>Bio</h3>
+    <p id="bio"></p>
+
+    <h3>Write-up</h3>
+    <p id="writeup"></p>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Women’s Day Profiles
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+
+    fetch("../profiles.json")
+      .then(response => response.json())
+      .then(data => {
+        const profile = data.find(p => p.name === name);
+        if (profile) {
+          document.getElementById("name").textContent = profile.name;
+          document.getElementById("photo").src = `../images/${profile.photo}`;
+          document.getElementById("bio").textContent = profile.bio;
+          document.getElementById("writeup").textContent = profile.writeup;
+        } else {
+          document.body.innerHTML = "<h1>Profile Not Found</h1>";
+        }
+      });
+  </script>
 </body>
 </html>
