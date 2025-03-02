@@ -62,20 +62,6 @@
             color: #333;
             line-height: 1.6;
         }
-
-        /* Hidden Play Button (Only for Debugging) */
-        .play-music {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: #6a0572;
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
     </style>
 </head>
 <body>
@@ -87,9 +73,6 @@
         <p id="bio"></p>
         <h3>Write-up</h3>
         <p id="writeup"></p>
-
-        <!-- 🎶 Play Music Button (For Debugging) -->
-        <button class="play-music" onclick="playMusic()">🎵 Play Music</button>
     </div>
 
     <!-- 🎶 Hidden Music Player -->
@@ -115,13 +98,19 @@
             }
         });
 
-        // 🎵 Debugging: Click to Play
-        function playMusic() {
+        // 🎵 Automatically Play Music After First Click Anywhere
+        function enableMusicPlayback() {
             var audio = document.getElementById("bg-music");
-            audio.play()
-                .then(() => console.log("Music playing"))
-                .catch(error => console.log("Music play error:", error));
+            if (audio.paused) {
+                audio.play()
+                    .then(() => console.log("Music started"))
+                    .catch(error => console.log("Autoplay blocked:", error));
+            }
         }
+
+        // 🎵 Add Click Event to Start Music
+        document.addEventListener("click", enableMusicPlayback, { once: true });
+
     </script>
 </body>
 </html>
