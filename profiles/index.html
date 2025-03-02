@@ -14,6 +14,41 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .welcome-container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            display: block;
+        }
+
+        .welcome-message {
+            font-size: 20px;
+            font-weight: bold;
+            color: #6a0572;
+            margin-bottom: 15px;
+        }
+
+        .start-button {
+            background: #d63384;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .start-button:hover {
+            background: #b0246b;
         }
 
         .profile-container {
@@ -24,7 +59,8 @@
             text-align: center;
             max-width: 420px;
             width: 90%;
-            position: relative;
+            display: none; 
+            animation: fadeIn 1s ease-in-out;
         }
 
         .banner {
@@ -62,10 +98,21 @@
             color: #333;
             line-height: 1.6;
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
     </style>
 </head>
 <body>
-    <div class="profile-container">
+    <div class="welcome-container" id="welcomeScreen">
+        <div class="welcome-message">Hi <span id="userName">User</span>, We have a message for you!</div>
+        <button class="start-button" onclick="showProfile()">Click to View</button>
+    </div>
+
+    <div class="profile-container" id="profileContainer">
         <div class="banner">🌸 Happy Women's Day! 💜</div>
         <img id="photo" src="" alt="Profile Photo">
         <h1 id="name"></h1>
@@ -75,7 +122,6 @@
         <p id="writeup"></p>
     </div>
 
-    <!-- 🎶 Hidden Music Player -->
     <audio id="bg-music" loop>
         <source src="../music/WD1.mp3" type="audio/mp3">
     </audio>
@@ -89,6 +135,7 @@
         .then(data => {
             const profile = data.find(p => p.name === name);
             if (profile) {
+                document.getElementById("userName").textContent = profile.name;
                 document.getElementById("name").textContent = profile.name;
                 document.getElementById("photo").src = `../images/${profile.photo}?v=${new Date().getTime()}`;
                 document.getElementById("bio").textContent = profile.bio;
@@ -98,19 +145,14 @@
             }
         });
 
-        // 🎵 Automatically Play Music After First Click Anywhere
-        function enableMusicPlayback() {
+
+        function showProfile() {
+            document.getElementById("welcomeScreen").style.display = "none"; 
+            document.getElementById("profileContainer").style.display = "block"; 
+
             var audio = document.getElementById("bg-music");
-            if (audio.paused) {
-                audio.play()
-                    .then(() => console.log("Music started"))
-                    .catch(error => console.log("Autoplay blocked:", error));
-            }
+            audio.play().catch(error => console.log("Autoplay blocked:", error));
         }
-
-        // 🎵 Add Click Event to Start Music
-        document.addEventListener("click", enableMusicPlayback, { once: true });
-
     </script>
 </body>
 </html>
