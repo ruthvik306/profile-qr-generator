@@ -80,6 +80,11 @@
         <p id="writeup"></p>
     </div>
 
+    <!-- 🎶 Hidden Music Player -->
+    <audio id="bg-music" autoplay loop>
+        <source src="../music/WD1.mp3" type="audio/mp3">
+    </audio>
+
     <script>
         const params = new URLSearchParams(window.location.search);
         const name = params.get("name");
@@ -96,6 +101,11 @@
             } else {
                 document.body.innerHTML = "<h1>Profile Not Found</h1>";
             }
+        });
+
+        // 🎵 Ensure music plays on user interaction (for browsers that block autoplay)
+        document.addEventListener("click", function() {
+            document.getElementById("bg-music").play();
         });
     </script>
 </body>
