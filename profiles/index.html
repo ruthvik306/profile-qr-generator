@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Women's Day 💜</title>
     <style>
-        /* Background with gradient */
         body {
             font-family: 'Arial', sans-serif;
             background: linear-gradient(to bottom, #fbe7f6, #e0aaff);
@@ -17,7 +16,6 @@
             height: 100vh;
         }
 
-        /* Profile card */
         .profile-container {
             background: white;
             padding: 25px;
@@ -29,7 +27,6 @@
             position: relative;
         }
 
-        /* Women's Day Banner */
         .banner {
             background: #d63384;
             color: white;
@@ -39,7 +36,6 @@
             border-radius: 12px 12px 0 0;
         }
 
-        /* Profile image */
         .profile-container img {
             width: 130px;
             height: 130px;
@@ -66,6 +62,20 @@
             color: #333;
             line-height: 1.6;
         }
+
+        /* Hidden Play Button (Only for Debugging) */
+        .play-music {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #6a0572;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
@@ -77,6 +87,9 @@
         <p id="bio"></p>
         <h3>Write-up</h3>
         <p id="writeup"></p>
+
+        <!-- 🎶 Play Music Button (For Debugging) -->
+        <button class="play-music" onclick="playMusic()">🎵 Play Music</button>
     </div>
 
     <!-- 🎶 Hidden Music Player -->
@@ -102,22 +115,13 @@
             }
         });
 
-        // 🎵 Play music on user interaction (fix autoplay restriction)
-        document.addEventListener("click", function() {
+        // 🎵 Debugging: Click to Play
+        function playMusic() {
             var audio = document.getElementById("bg-music");
-            if (audio.paused) {
-                audio.play().catch(error => console.log("Autoplay blocked:", error));
-            }
-        });
-
-        // 🎵 Try playing after page load (some browsers allow autoplay with muted first)
-        window.onload = function() {
-            var audio = document.getElementById("bg-music");
-            audio.muted = true; // Start muted to allow autoplay
-            audio.play().then(() => {
-                audio.muted = false; // Unmute after autoplay starts
-            }).catch(error => console.log("Autoplay blocked:", error));
-        };
+            audio.play()
+                .then(() => console.log("Music playing"))
+                .catch(error => console.log("Music play error:", error));
+        }
     </script>
 </body>
 </html>
