@@ -66,7 +66,6 @@
             color: #333;
             line-height: 1.6;
         }
-
     </style>
 </head>
 <body>
@@ -81,7 +80,7 @@
     </div>
 
     <!-- 🎶 Hidden Music Player -->
-    <audio id="bg-music" autoplay loop>
+    <audio id="bg-music" loop>
         <source src="../music/WD1.mp3" type="audio/mp3">
     </audio>
 
@@ -103,10 +102,22 @@
             }
         });
 
-        // 🎵 Ensure music plays on user interaction (for browsers that block autoplay)
+        // 🎵 Play music on user interaction (fix autoplay restriction)
         document.addEventListener("click", function() {
-            document.getElementById("bg-music").play();
+            var audio = document.getElementById("bg-music");
+            if (audio.paused) {
+                audio.play().catch(error => console.log("Autoplay blocked:", error));
+            }
         });
+
+        // 🎵 Try playing after page load (some browsers allow autoplay with muted first)
+        window.onload = function() {
+            var audio = document.getElementById("bg-music");
+            audio.muted = true; // Start muted to allow autoplay
+            audio.play().then(() => {
+                audio.muted = false; // Unmute after autoplay starts
+            }).catch(error => console.log("Autoplay blocked:", error));
+        };
     </script>
 </body>
 </html>
