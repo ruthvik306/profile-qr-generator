@@ -103,7 +103,6 @@
             from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
     </style>
 </head>
 <body>
@@ -127,31 +126,48 @@
     </audio>
 
     <script>
-        const params = new URLSearchParams(window.location.search);
-        const name = params.get("name");
+        document.addEventListener("DOMContentLoaded", function () {
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get("name");
 
-        fetch("../profiles.json")
-        .then(response => response.json())
-        .then(data => {
-            const profile = data.find(p => p.name === name);
-            if (profile) {
-                document.getElementById("userName").textContent = profile.name;
-                document.getElementById("name").textContent = profile.name;
-                document.getElementById("photo").src = `../images/${profile.photo}?v=${new Date().getTime()}`;
-                document.getElementById("bio").textContent = profile.bio;
-                document.getElementById("writeup").textContent = profile.writeup;
-            } else {
-                document.body.innerHTML = "<h1>Profile Not Found</h1>";
+            console.log("🔍 Fetching Profile for:", name); // Debugging log
+
+            if (!name) {
+                document.body.innerHTML = "<h1>Error: No name provided in URL</h1>";
+                return;
             }
-        });
 
+            fetch(`../profiles.json?v=${new Date().getTime()}`) // Force fresh fetch
+            .then(response => {
+                if (!response.ok) throw new Error("Failed to fetch JSON");
+                return response.json();
+            })
+            .then(data => {
+                console.log("✅ Fetched Profiles:", data); // Debugging log
+
+                const profile = data.find(p => p.name === name);
+                if (profile) {
+                    document.getElementById("userName").textContent = profile.name;
+                    document.getElementById("name").textContent = profile.name;
+                    document.getElementById("photo").src = `../images/${profile.photo}?v=${new Date().getTime()}`;
+                    document.getElementById("bio").textContent = profile.bio || "No bio available.";
+                    document.getElementById("writeup").textContent = profile.writeup || "No write-up available.";
+                } else {
+                    document.body.innerHTML = `<h1>Profile Not Found for "${name}"</h1>`;
+                }
+            })
+            .catch(error => {
+                console.error("❌ Error fetching profile:", error);
+                document.body.innerHTML = "<h1>Error loading profile. Please try again.</h1>";
+            });
+        });
 
         function showProfile() {
             document.getElementById("welcomeScreen").style.display = "none"; 
             document.getElementById("profileContainer").style.display = "block"; 
 
             var audio = document.getElementById("bg-music");
-            audio.play().catch(error => console.log("Autoplay blocked:", error));
+            audio.play().catch(error => console.log("🎵 Autoplay blocked:", error));
         }
     </script>
 </body>
