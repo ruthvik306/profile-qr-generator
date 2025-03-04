@@ -1,30 +1,254 @@
 [
   {
-    "name": "John Doe",
-    "photo": "john.jpg",
-    "bio": "Software Engineer passionate about AI and robotics.",
-    "writeup": "John has worked on multiple AI-driven applications and is an advocate for open-source projects. He enjoys sharing knowledge through blog posts and speaking engagements.",
-    "url": "profiles/index.html?name=John%20Doe"
-  },
-  {
-    "name": "Jane Smith",
-    "photo": "jane.jpg",
-    "bio": "Creative Director and Illustrator.",
-    "writeup": "Jane specializes in branding and visual storytelling. She has worked with top brands and enjoys mentoring young artists in the industry.",
-    "url": "profiles/index.html?name=Jane%20Smith"
-  },
-  {
     "name": "Gayatri Mahajan",
-    "photo": "gayatri.jpg",
-    "bio": "Business Operations Associate",
-    "writeup": "As a Business Operations Associate, she is the backbone of efficiency, streamlining processes, optimizing workflows, and driving seamless execution. Her keen analytical skills, strategic mindset, and dedication ensure that operations run smoothly, fostering innovation and success. Today, we celebrate her resilience, leadership, and impact in shaping businesses for a brighter tomorrow. Happy Women's Day! 💜✨",
+    "photo": "Gayatri.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! You are an incredible woman who inspires, empowers, and creates positive change every day. Your strength, resilience, and grace are a true gift to the world. Here's to celebrating YOU and all the amazing things you do! May you continue to shine brightly, breaking barriers and building a brighter future. Today, we honour your achievements and your journey. Keep reaching for your dreams and never stop being the amazing person you are!",
     "url": "profiles/index.html?name=Gayatri%20Mahajan"
   },
-{
-    "name": "Chinmay Deshpande",
-    "photo": "chinmay.jpg",
-    "bio": "Mister steal your girl",
-    "writeup": "As a Business Operations Associate, she is the backbone of efficiency, streamlining processes, optimizing workflows, and driving seamless execution. Her keen analytical skills, strategic mindset, and dedication ensure that operations run smoothly, fostering innovation and success. Today, we celebrate her resilience, leadership, and impact in shaping businesses for a brighter tomorrow. Happy Women's Day! 💜✨",
-    "url": "profiles/index.html?name=Chinmay%20Deshpande"
+  {
+    "name": "Shalaka Bhosale",
+    "photo": "Shalaka.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to recognize the immense dedication, talent, and resilience you bring to your work each day. Your ability to tackle challenges with confidence and inspire those around you is truly remarkable. You not only contribute with your expertise but also uplift the entire team with your positive spirit and leadership. Your strength and determination make a difference, and we are grateful for the impact you have on all of us. Today, we celebrate you and all the ways you continue to inspire greatness.",
+    "url": "profiles/index.html?name=Shalaka%20Bhosale"
+  },
+  {
+    "name": "Vaidehi Kulkarni",
+    "photo": "Vaidehi.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to recognize the immense dedication, talent, and resilience you bring to your work each day. Your ability to tackle challenges with confidence and inspire those around you is truly remarkable. You not only contribute with your expertise but also uplift the entire team with your positive spirit and leadership. Your strength and determination make a difference, and we are grateful for the impact you have on all of us. Today, we celebrate you and all the ways you continue to inspire greatness.",
+    "url": "profiles/index.html?name=Vaidehi%20Kulkarni"
+  },
+  {
+    "name": "Shrutika Pawaskar",
+    "photo": "Shrutika.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We take a moment to recognize the remarkable strength and talent you bring to everything you do. Your hard work, creativity, and leadership inspire those around you, creating an environment where excellence thrives. You effortlessly balance the challenges of your role with a positive attitude that uplifts everyone you interact with. Your dedication and drive make a lasting impact, and we are fortunate to have you as part of this team. Today, we celebrate you and the countless ways you continue to inspire and empower others.",
+    "url": "profiles/index.html?name=Shrutika%20Pawaskar"
+  },
+  {
+    "name": "Mrudulla Manchanda",
+    "photo": "Mrudulla.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to take a moment to celebrate the strength, dedication, and brilliance you bring to everything you do. Your hard work, expertise, and unwavering commitment make a difference every day, inspiring those around you. You seamlessly balance the demands of your professional and personal life with grace, and your leadership sets an example for all. Today, we honor not only your achievements but also the kindness and resilience that make you such an invaluable part of this team. Your presence uplifts and empowers, and for that, we are truly grateful.",
+    "url": "profiles/index.html?name=Mrudulla%20Manchanda"
+  },
+  {
+    "name": "Neha Anand Pashiney",
+    "photo": "Neha.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! You are an incredible woman who inspires, empowers, and creates positive change every day. Your strength, resilience, and grace are a true gift to the world. Here's to celebrating YOU and all the amazing things you do! May you continue to shine brightly, breaking barriers and building a brighter future. Today, we honour your achievements and your journey. Keep reaching for your dreams and never stop being the amazing person you are!",
+    "url": "profiles/index.html?name=Neha%20Anand%20Pashiney"
+  },
+  {
+    "name": "Shweta Vasant Bonde",
+    "photo": "Shweta.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to acknowledge the incredible impact you have on our team and workplace. Your dedication, intelligence, and unwavering professionalism inspire all of us to strive for excellence. You manage challenges with grace and always bring a positive energy that elevates those around you. Your contributions are invaluable, and we are truly fortunate to work alongside someone so passionate and capable. Today, we celebrate you and the many ways you make a difference, not just as a professional, but as a remarkable woman.",
+    "url": "profiles/index.html?name=Shweta%20Vasant%20Bonde"
+  },
+  {
+    "name": "Monika More",
+    "photo": "Monika_More.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! You are an incredible woman who inspires, empowers, and creates positive change every day. Your strength, resilience, and grace are a true gift to the world. Here's to celebrating YOU and all the amazing things you do! May you continue to shine brightly, breaking barriers and building a brighter future. Today, we honour your achievements and your journey. Keep reaching for your dreams and never stop being the amazing person you are!",
+    "url": "profiles/index.html?name=Monika%20More"
+  },
+  {
+    "name": "Avanti Anil Kamble",
+    "photo": "Avanti.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to recognize the immense dedication, talent, and resilience you bring to your work each day. Your ability to tackle challenges with confidence and inspire those around you is truly remarkable. You not only contribute with your expertise but also uplift the entire team with your positive spirit and leadership. Your strength and determination make a difference, and we are grateful for the impact you have on all of us. Today, we celebrate you and all the ways you continue to inspire greatness.",
+    "url": "profiles/index.html?name=Avanti%20Anil%20Kamble"
+  },
+  {
+    "name": "Pratiksha Pawar",
+    "photo": "Pratiksha.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to take a moment to celebrate the strength, dedication, and brilliance you bring to everything you do. Your hard work, expertise, and unwavering commitment make a difference every day, inspiring those around you. You seamlessly balance the demands of your professional and personal life with grace, and your leadership sets an example for all. Today, we honor not only your achievements but also the kindness and resilience that make you such an invaluable part of this team. Your presence uplifts and empowers, and for that, we are truly grateful.",
+    "url": "profiles/index.html?name=Pratiksha%20Pawar"
+  },
+  {
+    "name": "Deepika Ashokrao Telang",
+    "photo": "Deepika.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We take a moment to recognize the remarkable strength and talent you bring to everything you do. Your hard work, creativity, and leadership inspire those around you, creating an environment where excellence thrives. You effortlessly balance the challenges of your role with a positive attitude that uplifts everyone you interact with. Your dedication and drive make a lasting impact, and we are fortunate to have you as part of this team. Today, we celebrate you and the countless ways you continue to inspire and empower others.",
+    "url": "profiles/index.html?name=Deepika%20Ashokrao%20Telang"
+  },
+  {
+    "name": "Sushmita Shekhar Khole",
+    "photo": "Sushmita.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to acknowledge the incredible impact you have on our team and workplace. Your dedication, intelligence, and unwavering professionalism inspire all of us to strive for excellence. You manage challenges with grace and always bring a positive energy that elevates those around you. Your contributions are invaluable, and we are truly fortunate to work alongside someone so passionate and capable. Today, we celebrate you and the many ways you make a difference, not just as a professional, but as a remarkable woman.",
+    "url": "profiles/index.html?name=Sushmita%20Shekhar%20Khole"
+  },
+  {
+    "name": "Rupali Ishwar Mali",
+    "photo": "Rupali.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! You are an incredible woman who inspires, empowers, and creates positive change every day. Your strength, resilience, and grace are a true gift to the world. Here's to celebrating YOU and all the amazing things you do! May you continue to shine brightly, breaking barriers and building a brighter future. Today, we honour your achievements and your journey. Keep reaching for your dreams and never stop being the amazing person you are!",
+    "url": "profiles/index.html?name=Rupali%20Ishwar%20Mali"
+  },
+  {
+    "name": "Mahima Pandey",
+    "photo": "Mahima.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We take a moment to recognize the remarkable strength and talent you bring to everything you do. Your hard work, creativity, and leadership inspire those around you, creating an environment where excellence thrives. You effortlessly balance the challenges of your role with a positive attitude that uplifts everyone you interact with. Your dedication and drive make a lasting impact, and we are fortunate to have you as part of this team. Today, we celebrate you and the countless ways you continue to inspire and empower others.",
+    "url": "profiles/index.html?name=Mahima%20Pandey"
+  },
+  {
+    "name": "Saumya Tripathi",
+    "photo": "Saumya.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to recognize the immense dedication, talent, and resilience you bring to your work each day. Your ability to tackle challenges with confidence and inspire those around you is truly remarkable. You not only contribute with your expertise but also uplift the entire team with your positive spirit and leadership. Your strength and determination make a difference, and we are grateful for the impact you have on all of us. Today, we celebrate you and all the ways you continue to inspire greatness.",
+    "url": "profiles/index.html?name=Saumya%20Tripathi"
+  },
+  {
+    "name": "Sukanya Natrajan -",
+    "photo": "Sukanya.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to acknowledge the incredible impact you have on our team and workplace. Your dedication, intelligence, and unwavering professionalism inspire all of us to strive for excellence. You manage challenges with grace and always bring a positive energy that elevates those around you. Your contributions are invaluable, and we are truly fortunate to work alongside someone so passionate and capable. Today, we celebrate you and the many ways you make a difference, not just as a professional, but as a remarkable woman.",
+    "url": "profiles/index.html?name=Sukanya%20Natrajan%20-"
+  },
+  {
+    "name": "Venu Anil Sonavane",
+    "photo": "Venu.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We take a moment to recognize the remarkable strength and talent you bring to everything you do. Your hard work, creativity, and leadership inspire those around you, creating an environment where excellence thrives. You effortlessly balance the challenges of your role with a positive attitude that uplifts everyone you interact with. Your dedication and drive make a lasting impact, and we are fortunate to have you as part of this team. Today, we celebrate you and the countless ways you continue to inspire and empower others.",
+    "url": "profiles/index.html?name=Venu%20Anil%20Sonavane"
+  },
+  {
+    "name": "Sharvari Shailesh Deshmukh",
+    "photo": "Sharvari.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! You are an incredible woman who inspires, empowers, and creates positive change every day. Your strength, resilience, and grace are a true gift to the world. Here's to celebrating YOU and all the amazing things you do! May you continue to shine brightly, breaking barriers and building a brighter future. Today, we honour your achievements and your journey. Keep reaching for your dreams and never stop being the amazing person you are!",
+    "url": "profiles/index.html?name=Sharvari%20Shailesh%20Deshmukh"
+  },
+  {
+    "name": "Sayli Raskar",
+    "photo": "Sayli.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to take a moment to celebrate the strength, dedication, and brilliance you bring to everything you do. Your hard work, expertise, and unwavering commitment make a difference every day, inspiring those around you. You seamlessly balance the demands of your professional and personal life with grace, and your leadership sets an example for all. Today, we honor not only your achievements but also the kindness and resilience that make you such an invaluable part of this team. Your presence uplifts and empowers, and for that, we are truly grateful.",
+    "url": "profiles/index.html?name=Sayli%20Raskar"
+  },
+  {
+    "name": "Naga Chandra Likhita Gundugula",
+    "photo": "Likhita.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to acknowledge the incredible impact you have on our team and workplace. Your dedication, intelligence, and unwavering professionalism inspire all of us to strive for excellence. You manage challenges with grace and always bring a positive energy that elevates those around you. Your contributions are invaluable, and we are truly fortunate to work alongside someone so passionate and capable. Today, we celebrate you and the many ways you make a difference, not just as a professional, but as a remarkable woman.",
+    "url": "profiles/index.html?name=Naga%20Chandra%20Likhita%20Gundugula"
+  },
+  {
+    "name": "Sonali Das",
+    "photo": "Sonali.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We take a moment to recognize the remarkable strength and talent you bring to everything you do. Your hard work, creativity, and leadership inspire those around you, creating an environment where excellence thrives. You effortlessly balance the challenges of your role with a positive attitude that uplifts everyone you interact with. Your dedication and drive make a lasting impact, and we are fortunate to have you as part of this team. Today, we celebrate you and the countless ways you continue to inspire and empower others.",
+    "url": "profiles/index.html?name=Sonali%20Das"
+  },
+  {
+    "name": "Vineetha Shanmugananth",
+    "photo": "Vineetha.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! You are an incredible woman who inspires, empowers, and creates positive change every day. Your strength, resilience, and grace are a true gift to the world. Here's to celebrating YOU and all the amazing things you do! May you continue to shine brightly, breaking barriers and building a brighter future. Today, we honour your achievements and your journey. Keep reaching for your dreams and never stop being the amazing person you are!",
+    "url": "profiles/index.html?name=Vineetha%20Shanmugananth"
+  },
+  {
+    "name": "T Mahalaxmi",
+    "photo": "Mahalaxmi.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to acknowledge the incredible impact you have on our team and workplace. Your dedication, intelligence, and unwavering professionalism inspire all of us to strive for excellence. You manage challenges with grace and always bring a positive energy that elevates those around you. Your contributions are invaluable, and we are truly fortunate to work alongside someone so passionate and capable. Today, we celebrate you and the many ways you make a difference, not just as a professional, but as a remarkable woman.",
+    "url": "profiles/index.html?name=T%20Mahalaxmi"
+  },
+  {
+    "name": "Sree Lakshmi Aparna Kuppachi",
+    "photo": "Aparna.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to recognize the immense dedication, talent, and resilience you bring to your work each day. Your ability to tackle challenges with confidence and inspire those around you is truly remarkable. You not only contribute with your expertise but also uplift the entire team with your positive spirit and leadership. Your strength and determination make a difference, and we are grateful for the impact you have on all of us. Today, we celebrate you and all the ways you continue to inspire greatness.",
+    "url": "profiles/index.html?name=Sree%20Lakshmi%20Aparna%20Kuppachi"
+  },
+  {
+    "name": "Monika Chowdary Mothukuri",
+    "photo": "Monika_Mothukuri.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We take a moment to recognize the remarkable strength and talent you bring to everything you do. Your hard work, creativity, and leadership inspire those around you, creating an environment where excellence thrives. You effortlessly balance the challenges of your role with a positive attitude that uplifts everyone you interact with. Your dedication and drive make a lasting impact, and we are fortunate to have you as part of this team. Today, we celebrate you and the countless ways you continue to inspire and empower others.",
+    "url": "profiles/index.html?name=Monika%20Chowdary%20Mothukuri"
+  },
+  {
+    "name": "Pearl Wilson",
+    "photo": "Pearl.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to acknowledge the incredible impact you have on our team and workplace. Your dedication, intelligence, and unwavering professionalism inspire all of us to strive for excellence. You manage challenges with grace and always bring a positive energy that elevates those around you. Your contributions are invaluable, and we are truly fortunate to work alongside someone so passionate and capable. Today, we celebrate you and the many ways you make a difference, not just as a professional, but as a remarkable woman.",
+    "url": "profiles/index.html?name=Pearl%20Wilson"
+  },
+  {
+    "name": "Avni Mittal",
+    "photo": "Avni.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! You are an incredible woman who inspires, empowers, and creates positive change every day. Your strength, resilience, and grace are a true gift to the world. Here's to celebrating YOU and all the amazing things you do! May you continue to shine brightly, breaking barriers and building a brighter future. Today, we honour your achievements and your journey. Keep reaching for your dreams and never stop being the amazing person you are!",
+    "url": "profiles/index.html?name=Avni%20Mittal"
+  },
+  {
+    "name": "Aditi Dhepe",
+    "photo": "Aditi.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! You are an incredible woman who inspires, empowers, and creates positive change every day. Your strength, resilience, and grace are a true gift to the world. Here's to celebrating YOU and all the amazing things you do! May you continue to shine brightly, breaking barriers and building a brighter future. Today, we honour your achievements and your journey. Keep reaching for your dreams and never stop being the amazing person you are!",
+    "url": "profiles/index.html?name=Aditi%20Dhepe"
+  },
+  {
+    "name": "Tanisha Bharadiya",
+    "photo": "Tanisha.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to acknowledge the incredible impact you have on our team and workplace. Your dedication, intelligence, and unwavering professionalism inspire all of us to strive for excellence. You manage challenges with grace and always bring a positive energy that elevates those around you. Your contributions are invaluable, and we are truly fortunate to work alongside someone so passionate and capable. Today, we celebrate you and the many ways you make a difference, not just as a professional, but as a remarkable woman.",
+    "url": "profiles/index.html?name=Tanisha%20Bharadiya"
+  },
+  {
+    "name": "Mokshada Sable",
+    "photo": "Mokshada.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We take a moment to recognize the remarkable strength and talent you bring to everything you do. Your hard work, creativity, and leadership inspire those around you, creating an environment where excellence thrives. You effortlessly balance the challenges of your role with a positive attitude that uplifts everyone you interact with. Your dedication and drive make a lasting impact, and we are fortunate to have you as part of this team. Today, we celebrate you and the countless ways you continue to inspire and empower others.",
+    "url": "profiles/index.html?name=Mokshada%20Sable"
+  },
+  {
+    "name": "Sanika Kotgire",
+    "photo": "Sanika.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to recognize the immense dedication, talent, and resilience you bring to your work each day. Your ability to tackle challenges with confidence and inspire those around you is truly remarkable. You not only contribute with your expertise but also uplift the entire team with your positive spirit and leadership. Your strength and determination make a difference, and we are grateful for the impact you have on all of us. Today, we celebrate you and all the ways you continue to inspire greatness.",
+    "url": "profiles/index.html?name=Sanika%20Kotgire"
+  },
+  {
+    "name": "Akanksha Kumar",
+    "photo": "Akanksha.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to acknowledge the incredible impact you have on our team and workplace. Your dedication, intelligence, and unwavering professionalism inspire all of us to strive for excellence. You manage challenges with grace and always bring a positive energy that elevates those around you. Your contributions are invaluable, and we are truly fortunate to work alongside someone so passionate and capable. Today, we celebrate you and the many ways you make a difference, not just as a professional, but as a remarkable woman.",
+    "url": "profiles/index.html?name=Akanksha%20Kumar"
+  },
+  {
+    "name": "Varsha G S",
+    "photo": "Varsha.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! You are an incredible woman who inspires, empowers, and creates positive change every day. Your strength, resilience, and grace are a true gift to the world. Here's to celebrating YOU and all the amazing things you do! May you continue to shine brightly, breaking barriers and building a brighter future. Today, we honour your achievements and your journey. Keep reaching for your dreams and never stop being the amazing person you are!",
+    "url": "profiles/index.html?name=Varsha%20G%20S"
+  },
+  {
+    "name": "Malisha Gavali",
+    "photo": "Malisha.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We want to acknowledge the incredible impact you have on our team and workplace. Your dedication, intelligence, and unwavering professionalism inspire all of us to strive for excellence. You manage challenges with grace and always bring a positive energy that elevates those around you. Your contributions are invaluable, and we are truly fortunate to work alongside someone so passionate and capable. Today, we celebrate you and the many ways you make a difference, not just as a professional, but as a remarkable woman.",
+    "url": "profiles/index.html?name=Malisha%20Gavali"
+  },
+  {
+    "name": "Taranjot Kaur",
+    "photo": "Taranjot.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! We take a moment to recognize the remarkable strength and talent you bring to everything you do. Your hard work, creativity, and leadership inspire those around you, creating an environment where excellence thrives. You effortlessly balance the challenges of your role with a positive attitude that uplifts everyone you interact with. Your dedication and drive make a lasting impact, and we are fortunate to have you as part of this team. Today, we celebrate you and the countless ways you continue to inspire and empower others.",
+    "url": "profiles/index.html?name=Taranjot%20Kaur"
+  },
+  {
+    "name": "Anushka Girish",
+    "photo": "Anushka.jpg",
+    "bio": "",
+    "writeup": "Happy Women's Day! You are an incredible woman who inspires, empowers, and creates positive change every day. Your strength, resilience, and grace are a true gift to the world. Here's to celebrating YOU and all the amazing things you do! May you continue to shine brightly, breaking barriers and building a brighter future. Today, we honour your achievements and your journey. Keep reaching for your dreams and never stop being the amazing person you are!",
+    "url": "profiles/index.html?name=Anushka%20Girish"
   }
 ]
