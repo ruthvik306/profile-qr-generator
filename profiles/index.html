@@ -87,12 +87,6 @@
             margin-top: 10px;
         }
 
-        h3 {
-            font-size: 18px;
-            color: #d63384;
-            margin-top: 15px;
-        }
-
         p {
             font-size: 14px;
             color: #333;
@@ -146,9 +140,15 @@
                 if (profile) {
                     document.getElementById("userName").textContent = profile.name;
                     document.getElementById("name").textContent = profile.name;
-                    document.getElementById("photo").src = `../images/${profile.photo}?v=${new Date().getTime()}`;
-                    document.getElementById("bio").textContent = profile.bio || "No bio available.";
-                    document.getElementById("writeup").textContent = profile.writeup || "No write-up available.";
+                    
+                    // Handle missing images gracefully
+                    if (profile.photo) {
+                        document.getElementById("photo").src = `../images/${profile.photo}?v=${new Date().getTime()}`;
+                    } else {
+                        document.getElementById("photo").style.display = "none";
+                    }
+                    
+                    document.getElementById("writeup").textContent = profile.writeup || "No message available.";
                 } else {
                     document.body.innerHTML = `<h1>Profile Not Found for "${name}"</h1>`;
                 }
